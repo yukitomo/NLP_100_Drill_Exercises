@@ -1,25 +1,21 @@
 #!/usr/bin/python
 #-*-coding:utf-8-*-
-import sys
-a = 0
-f1=open('col1.txt','w')
-f2=open('col2.txt','w')
+#(4) (3)で作ったcol1.txtとcol2.txtを結合し，元のタブ区切りテキストを復元したもの．確認にはpasteコマンドを用いよ．
 
-for line in open(sys.argv[1]):
-	a+=1
-	line2=line.replace("	"," ")
-	print line2,
-	itemList = line2[:-1].split(' ')
-	#print itemList[1]
-	f1.write(itemList[0]+"\n")
-	f2.write(itemList[1]+"\n")
-	
-print a
-#print sys.argv[0]
-#print sys.argv[1]
+def make_list(f):
+	list = []
+	for line in f:
+		list.append(line.strip())
+	return list 
 
+def main():
+	f1=open('col1.txt','r')
+	f2=open('col2.txt','r')
+	list1 = make_list(f1)
+	list2 = make_list(f2)
 
-f1.close()
-f2.close()
+	for i in range(len(list1)):
+		print list1[i] + "\t" +  list2[i] 
 
-
+if __name__ == '__main__':
+	main()
