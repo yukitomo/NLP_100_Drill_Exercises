@@ -1,5 +1,7 @@
 #!/usr/bin/python
 #-*-coding:utf-8-*-
+#(19) 郵便番号・県名・市町村名の３要素を組で（まとめて）抽出せよ．
+#python test19.py tweet.txt
 import sys 
 import re
 

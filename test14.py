@@ -1,5 +1,6 @@
 #!/usr/bin/python
 #-*-coding:utf-8-*-
+#(14)ツイッターのユーザー名（@で始まる文字列）を抽出せよ．
 
 import sys
 import re

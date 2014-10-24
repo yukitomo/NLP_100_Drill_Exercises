@@ -1,5 +1,7 @@
 #!/user/bin/python
 #-*-coding:utf-8-*-
+#(13)非公式RTのツイートの中で，RT先へのコメント部分のみを抽出せよ．
+#python test13.py tweets.txt 
 
 import sys
 import re

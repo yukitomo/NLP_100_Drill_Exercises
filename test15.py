@@ -1,5 +1,7 @@
 #!/usr/bin/python
 #-*-coding:utf-8-*-
+#(15) ツイッターのユーザー名（例えば@xxxxxxx）を，そのユーザーのページへのリンク（<a href="https://twitter.com/#!/xxxxxxx">@xxxxxxx</a>で囲まれたHTML断片）に置換せよ．
+#python test15.py tweets.txt 
 
 import sys
 import re

@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #-*-coding:utf-8-*-
 #(8) 各行を２コラム目の辞書順にソートしたもの（注意: 各行の内容は変更せずに並び替えよ）．確認にはsortコマンドを用いよ（この問題は結果が合わなくてもよい）．
-#sort -t $'\t' -k2 address.txt
+#sort -t $'\t' -k 2 address.txt
 
 address = {}
 
